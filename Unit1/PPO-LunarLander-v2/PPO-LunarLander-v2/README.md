@@ -31,9 +31,15 @@ Here is a preview of the trained agent landing successfully:
 - **GAE Lambda**: 0.95
 
 ### Training Process
-- The agent was trained over multiple episodes.
-- The training process used a replay buffer to store experiences and update the policy network periodically.
-- The policy network is a feedforward neural network with two hidden layers, each containing 64 neurons and ReLU activations.
+  - The agent was trained for approximately 1.3 million environment timesteps .
+  - During training, experiences (state, action, reward, next state, done) were stored in a replay buffer .
+  - The policy network was updated periodically using these stored experiences, allowing for more stable and efficient learning.
+  - The policy network architecture  consists of a feedforward neural network with:
+      - Two hidden layers
+      - Each layer containing 64 neurons 
+      - ReLU  activation functions between layers
+           
+     
 
 ### Files in the Repository
 
