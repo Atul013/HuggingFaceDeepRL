@@ -17,99 +17,56 @@ Reinforcement learning is a **framework for solving control tasks (also called d
 
 <img src="https://huggingface.co/datasets/huggingface-deep-rl-course/course-images/resolve/main/en/unit1/rl-loop-ex.jpg" alt="Exercise RL Loop"/>
 
-At every step:
-- Our Agent receives ______ from the environment
-- Based on that ______ the Agent takes an ______
-- Our Agent will move to the right
-- The Environment goes to a ______
+### At every step:
+
+- Our Agent receives ______ from the environment  
+- Based on that ______ the Agent takes an ______  
+- Our Agent will move to the right  
+- The Environment goes to a ______  
 - The Environment gives a ______ to the Agent
 
+**Choices:**
 
-<Question
-	choices={[
-		{
-			text: "an action a0, action a0, state s0, state s1, reward r1",
-			explain: "At every step: Our Agent receives **state s0** from the environment. Based on that **state s0** the Agent takes an **action a0**. Our Agent will move to the right. The Environment goes to a **new state s1**. The Environment gives **a reward r1** to the Agent."
-		},
-		{
-			text: "state s0, state s0, action a0, new state s1, reward r1",
-			explain: "",
-      correct: true
-		},
-		{
-			text: "a state s0, state s0, action a0, state s1, action a1",
-      explain: "At every step: Our Agent receives **state s0** from the environment. Based on that **state s0** the Agent takes an **action a0**. Our Agent will move to the right. The Environment goes to a **new state s1**. The Environment gives **a reward r1** to the Agent."
-		}
-	]}
-/>
+1. **an action a0, action a0, state s0, state s1, reward r1**  
+   _Explanation_: Our Agent receives **state s0** from the environment. Based on that **state s0** the Agent takes an **action a0**. Our Agent will move to the right. The Environment goes to a **new state s1**. The Environment gives **a reward r1** to the Agent.
+
+2. **state s0, state s0, action a0, new state s1, reward r1** ✅
+
+3. **a state s0, state s0, action a0, state s1, action a1**  
+   _Explanation_: Same as above but ends incorrectly.
+
+---
 
 ### Q3: What's the difference between a state and an observation?
 
-<Question
-	choices={[
-		{
-			text: "The state is a complete description of the state of the world (there is no hidden information)",
-			explain: "",
-      correct: true
-		},
-    {
-			text: "The state is a partial description of the state",
-			explain: ""
-		},
-    {
-      text: "The observation is a complete description of the state of the world (there is no hidden information)",
-      explain: ""
-    },
-    {
-      text: "The observation is a partial description of the state",
-      explain: "",
-      correct: true
-    },
-    {
-      text: "We receive a state when we play with chess environment",
-      explain: "Since we have access to the whole checkboard information.",
-      correct: true
-    },
-    {
-      text: "We receive an observation when we play with chess environment",
-      explain: "Since we have access to the whole checkboard information."
-    },
-    {
-      text: "We receive a state when we play with Super Mario Bros",
-      explain: "We only see a part of the level close to the player, so we receive an observation."
-    },
-    {
-      text: "We receive an observation when we play with Super Mario Bros",
-      explain: "We only see a part of the level close to the player.",
-      correct: true
-    }
-	]}
-/>
+**Choices:**
+
+1. **The state is a complete description of the state of the world (there is no hidden information)** ✅  
+2. **The state is a partial description of the state**  
+3. **The observation is a complete description of the state of the world (there is no hidden information)**  
+4. **The observation is a partial description of the state** ✅  
+5. **We receive a state when we play with chess environment** ✅  
+   - _Explanation_: We have access to the whole chessboard.  
+6. **We receive an observation when we play with chess environment**  
+   - _Explanation_: Incorrect — we get full info.  
+7. **We receive a state when we play with Super Mario Bros**  
+   - _Explanation_: Incorrect — we don’t see the full level.  
+8. **We receive an observation when we play with Super Mario Bros** ✅  
+   - _Explanation_: Only part of the level is visible.
+
+---
 
 ### Q4: A task is an instance of a Reinforcement Learning problem. What are the two types of tasks?
 
-<Question
-	choices={[
-		{
-			text: "Episodic",
-			explain: "In Episodic task, we have a starting point and an ending point (a terminal state). This creates an episode: a list of States, Actions, Rewards, and new States. For instance, think about Super Mario Bros: an episode begin at the launch of a new Mario Level and ending when you’re killed or you reached the end of the level.",
-      correct: true
-		},
-    {
-			text: "Recursive",
-			explain: ""
-		},
-    {
-			text: "Adversarial",
-			explain: ""
-		},
-    {
-      text: "Continuing",
-      explain: "Continuing tasks are tasks that continue forever (no terminal state). In this case, the agent must learn how to choose the best actions and simultaneously interact with the environment.",
-      correct: true
-    }
-	]}
-/>
+**Choices:**
+
+1. **Episodic** ✅  
+   - _Explanation_: Has a clear start and end (e.g., a Mario level).  
+2. **Recursive**  
+3. **Adversarial**  
+4. **Continuing** ✅  
+   - _Explanation_: No terminal state; runs indefinitely (e.g., stock trading).
+
 
 ### Q5: What is the exploration/exploitation tradeoff?
 
