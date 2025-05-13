@@ -28,7 +28,7 @@ tags:
   ### Watch your Agent play
   You can watch your agent **playing directly in your browser**
 
-  1. If the environment is part of ML-Agents official environments, go to https://huggingface.co/unity
+  1. If the environment is part of ML-Agents official environments, go to https://huggingface.co/spaces/unity/ML-Agents-Huggy
   2. Step 1: Find your model_id: Icarus013/ppo-Huggy
   3. Step 2: Select your *.nn /*.onnx file
   4. Click on Watch the agent play 👀
