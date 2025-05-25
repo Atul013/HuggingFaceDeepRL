@@ -1,6 +1,6 @@
 
 
-# 📘 Reinforcement Learning Unit 1Glossary
+# 📘 Reinforcement Learning Unit 1 Glossary
 
 > *This is a community-created glossary.*
 
